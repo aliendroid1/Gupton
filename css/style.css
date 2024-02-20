@@ -1,89 +1,100 @@
 
-
+* {
+    margin: 0;
+}
 
 body {       
   min-height: 0;
   min-width: 0;
+  margin: 0; 
   display: flex;
   flex-direction: column; 
   background-color: LightGray;     
-  margin: 0; /* Remove default margin to prevent scroll  */
 }          
 
-main{
-  min-height: 75vh;
-  
-}
-
 header {
+  width: 100vw;    
   display: flex;
+  flex-direction: column;
+}
+main{
   width: 100vw;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  /* border: 3px solid red;  */
-}
-
-nav img {
-  width: 20vw;
-  padding: 2%;
-  background-color: white; 
-  border: 3px solid orange; 
-}
-
-header h1 {
-  color: blue;
-  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center; 
-  text-align: center;
-  border: 2px solid yellow;
+  flex-direction: column;
+
   
+  min-height: 80vh;  
 }
+footer {
+  width: 100vw;    
+  display: flex;
+  flex-direction: column;
+}
+
+
+header{   
+    border-bottom: 1vw solid darkOrange;
+}
+footer{   
+    border-top: 1vw solid darkOrange;
+}
+
 nav {
     width: 100vw;
-    padding: 0;
-    background-color: darkOrange; 
-    color: white; 
+    display: flex;
+    flex-direction: column;
+
+
+       
+    align-items: center;
+    justify-content: center;
 }
 
+
+
+
+
 nav ul {
-    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; /* Space between logo and nav-links */
+    justify-content: space-evenly; 
     align-items: center; 
+    
+
+
     padding: 0;
     background-color: black; 
-    color: white; 
 }
-
-
 nav ul li {
     list-style: none; 
     display: flex; 
     gap: 20px; 
 }
-
-
-
+nav ul li img {
+  width: 20vw;
+  padding: 2%;
+  background-color: white; 
+  border: 3px solid orange; 
+}
 nav ul li a {
     color: white; 
     text-decoration: none; /* Remove underline from links */
     padding: 0.5rem; /* Add padding for clickable area */
     transition: color 0.3s; /* Smooth transition for hover effect */
 }
-
 nav ul li a:hover {
     color: #4CAF50;
 }
-header { 
-  position: fixed; 
+nav small {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding: 0;
+    background-color: gray; 
+    color: white; 
+    padding: 1%;
 }
-footer { 
-  position: fixed; 
-  bottom: 0; 
-  
-}
+
+
